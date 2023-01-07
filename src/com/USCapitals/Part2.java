@@ -33,14 +33,14 @@ import java.util.TreeMap;
          }
          System.out.println();
 
-         //formatting display to print out tree map sorted
+         //formatting display to print out tree map naturally sorted
          System.out.println();
          System.out.println("----------------------------------------------");
          System.out.println("--------State Capitals Tree Map Sorted--------");
          System.out.println("----------------------------------------------");
          System.out.println();
 
-         //prints the contents of the tree map sorted
+         //prints the contents of the tree map naturally sorted
          for (Map.Entry<String, String> entry : sortedTreeMap.entrySet()) {
              System.out.println(entry.getValue() + ", " + entry.getKey());
          }
@@ -93,7 +93,8 @@ import java.util.TreeMap;
          return capitalsTreeMap;
      }
 
-    private static String[][] capitals = { //array of states and their capitals from Part 1
+    //array of states and capitals
+     private static String[][] capitals = { //array of states and their capitals from Part 1
             {"Alabama", "Montgomery"},
             {"Alaska", "Juneau"},
             {"Arizona", "Phoenix"},
